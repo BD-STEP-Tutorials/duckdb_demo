@@ -1,4 +1,4 @@
 black
-dubckdb
+duckdb
 flake8
 pandas
