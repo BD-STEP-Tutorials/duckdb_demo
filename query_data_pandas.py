@@ -1,10 +1,10 @@
-#%%
+# %%
 import duckdb
 import pandas as pd
 
-#%%
-#load csv
-census = pd.read_csv('us2021census.csv')
+# %%
+# load csv
+census = pd.read_csv("us2021census.csv")
 
 
 # %%
@@ -17,7 +17,7 @@ query_str = """
 
 duckdb.query(query_str)
 
-#%%
+# %%
 # GROUP BY Example
 query_str = """
     SELECT State, CAST(AVG(Population) AS INTEGER) AS AVG_City_Pop
@@ -28,4 +28,3 @@ query_str = """
 
 # convert results of query to a new dataframe
 avg_city_pop_by_state = duckdb.query(query_str).to_df()
-
