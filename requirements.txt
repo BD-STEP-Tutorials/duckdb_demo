@@ -1,4 +1,9 @@
 black
 duckdb
+duckdb-engine
 flake8
+ipython-sql
+jupysql
+matplotlib
+notebook
 pandas
